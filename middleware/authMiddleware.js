@@ -17,9 +17,10 @@ const protect = async (req, res, next) => {
   
         // Find user with the id and return it without the password
         req.user = await User.findById(decoded.id).select("-password");
-  
+        console.log("auth check passed")
         next(); // Move on to next operation
       } catch (error) {
+        console.log("auth check failed")
         return res.status(401).json({
           success: false,
           statusCode: 401,

@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "author": "Rohit Tewari",
+  "author": "Shailendra Ruhela",
   "proxy": "http://localhost:5000",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",

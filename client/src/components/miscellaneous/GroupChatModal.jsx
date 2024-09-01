@@ -75,8 +75,18 @@ const GroupChatModal = ({ children }) => {
         variant: "solid",
       });
     }
-
+    if (selectedUsers.length<2) {
+      return toast({
+        title: "At least two users required to create a GroupChat",
+        status: "warning",
+        duration: 5000,
+        isClosable: true,
+        position: "bottom-left",
+        variant: "solid",
+      });
+    }
     try {
+      console.log(selectedUsers);
       const response = await fetch("/api/chat/group", {
         method: "POST",
         headers: {

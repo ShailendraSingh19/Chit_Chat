@@ -40,7 +40,7 @@ const ProfileModal = ({ user, children }) => {
             fontSize="40px"
             fontFamily="Work sans"
           >
-            {user.name}
+            {user?.name || "No Name"}
           </ModalHeader>
 
           <ModalCloseButton />
@@ -52,19 +52,23 @@ const ProfileModal = ({ user, children }) => {
             justifyContent="space-between"
           >
             {/* Profile Picture */}
-            <Image
-              borderRadius="full"
-              boxSize="150px"
-              src={user.pic}
-              alt={user.name}
-            />
+            {user?.pic ? (
+              <Image
+                borderRadius="full"
+                boxSize="150px"
+                src={user.pic}
+                alt={user?.name || "User"}
+              />
+            ) : (
+              <Text>No Picture</Text>
+            )}
 
             {/* Email Address */}
             <Text
               fontSize={{ base: "28px", md: "30px" }}
               fontFamily="Work sans"
             >
-              Email: {user.email}
+              Email: {user?.email || "No Email"}
             </Text>
           </ModalBody>
 
