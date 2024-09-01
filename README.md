@@ -15,11 +15,11 @@ Chit_Chat is a modern chat application built with React and Chakra UI. It offers
 
 Here are some screenshots of different features of the application:
 
-- **Sign Up:** ![Sign Up](docs/screenshots/signup.png)
-- **Log In:** ![Log In](docs/screenshots/login.png)
-- **Find Users:** ![Find Users](docs/screenshots/findusers.png)
-- **Single Chat:** ![Single Chat](docs/screenshots/singlechat.png)
-- **Group Chat:** ![Group Chat](docs/screenshots/groupchat.png)
+- **Sign Up:** ![Sign Up](/ScreenShots/signuppage_img.png)
+- **Log In:** ![Log In](/ScreenShots/loginpage_img.png)
+- **Find Users:** ![Find Users](/ScreenShots/searchuser_img.png)
+- **Single Chat:** ![Single Chat](/ScreenShots/singlechat_img.png)
+- **Group Chat:** ![Group Chat](/ScreenShots/groupchat_img.png)
 
 ## Technologies Used
 
